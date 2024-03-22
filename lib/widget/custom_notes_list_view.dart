@@ -4,7 +4,12 @@ import 'custom_note_item.dart';
 
 class NotesListView extends StatelessWidget {
   const NotesListView({super.key});
-
+  final List data = const [
+    Color.fromARGB(0, 161, 235, 132),
+    Color.fromARGB(0, 74, 255, 3),
+    Color.fromARGB(0, 214, 55, 1),
+    Color.fromARGB(0, 241, 11, 199),
+  ];
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
