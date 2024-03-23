@@ -4,5 +4,6 @@ class NoteModel {
   final String subtitle;
   final int color;
 
+
   NoteModel({required this.title, required this.date, required this.subtitle, required this.color});
 }
