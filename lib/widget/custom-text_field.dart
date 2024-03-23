@@ -3,21 +3,20 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField(
-      {super.key, required this.hintText,  this.maxLines = 1});
+  const CustomTextField({super.key, required this.hintText, this.maxLines = 1});
   final String hintText;
   final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor: KPrimaryColor,
+      cursorColor: kPrimaryColor,
       maxLines: maxLines,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: TextStyle(color: KPrimaryColor),
+        hintStyle: TextStyle(color: kPrimaryColor),
         border: buildBorder(),
         enabledBorder: buildBorder(),
-        focusedBorder: buildBorder(KPrimaryColor),
+        focusedBorder: buildBorder(kPrimaryColor),
       ),
     );
   }
